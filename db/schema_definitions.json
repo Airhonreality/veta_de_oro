@@ -1,0 +1,45 @@
+[
+  {
+    "id": "schema_clients",
+    "context": "schema_definitions",
+    "data": {
+      "name": "Clientes y Entidades Legales",
+      "fields": [
+        { "key": "name", "label": "Nombre / Razón Social", "type": "text", "required": true },
+        { "key": "email", "label": "Correo Electrónico", "type": "text", "required": false },
+        { "key": "phone", "label": "Teléfono de Contacto", "type": "text", "required": false },
+        { "key": "address", "label": "Dirección de Obra", "type": "text", "required": false },
+        { "key": "tax_id", "label": "NIT / Identificación Fiscal", "type": "text", "required": false },
+        { "key": "legal_rep", "label": "Representante Legal", "type": "text", "required": false },
+        { "key": "bank_info", "label": "Información Bancaria", "type": "text", "required": false }
+      ]
+    }
+  },
+  {
+    "id": "schema_quotes",
+    "context": "schema_definitions",
+    "data": {
+      "name": "Cabecera de Proyecto",
+      "fields": [
+        { "key": "client_id", "label": "Cliente", "type": "text", "required": true },
+        { "key": "project_name", "label": "Nombre del Proyecto", "type": "text", "required": true },
+        { "key": "status", "label": "Estado", "type": "select", "options": ["Borrador", "Cotizado", "Contrato", "Entregado"], "required": true },
+        { "key": "expiry_date", "label": "Validez hasta", "type": "date", "required": false }
+      ]
+    }
+  },
+  {
+    "id": "schema_items",
+    "context": "schema_definitions",
+    "data": {
+      "name": "Catálogo de Átomos",
+      "fields": [
+        { "key": "type", "label": "Tipo", "type": "select", "options": ["Material", "Herraje", "Servicio"], "required": true },
+        { "key": "code", "label": "Código", "type": "text", "required": true },
+        { "key": "name", "label": "Descripción", "type": "text", "required": true },
+        { "key": "price", "label": "Costo", "type": "number", "required": true },
+        { "key": "unit", "label": "Unidad", "type": "select", "options": ["M2", "ML", "UN", "GLB"], "required": true }
+      ]
+    }
+  }
+]

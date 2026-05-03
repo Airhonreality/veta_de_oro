@@ -1,0 +1,34 @@
+[
+  {
+    "id": "route_erp_dashboard",
+    "context": "page_routes",
+    "data": {
+      "path": "/erp",
+      "name": "Orbital Dashboard",
+      "layoutStyle": "full",
+      "blocks": [
+        {
+          "type": "custom",
+          "moduleName": "erp_dashboard",
+          "title": "Centro de Operaciones"
+        }
+      ]
+    }
+  },
+  {
+    "id": "route_erp_cotizador",
+    "context": "page_routes",
+    "data": {
+      "path": "/erp/cotizador",
+      "name": "Cotizador Veta de Oro",
+      "layoutStyle": "compact",
+      "blocks": [
+        {
+          "type": "custom",
+          "moduleName": "veta_de_oro_quoter",
+          "title": "Configurador de Espacios Exclusivos"
+        }
+      ]
+    }
+  }
+]

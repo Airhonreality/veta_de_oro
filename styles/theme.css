@@ -1,0 +1,72 @@
+/* 
+ * Veta de Oro - Luxe Glassmorphism Theme
+ * High-end aesthetic for furniture manufacturing systems.
+ */
+
+:root {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  
+  /* Veta de Oro Brand Colors */
+  --primary: 45 60% 50%; /* Gold #D4AF37 */
+  --primary-foreground: 0 0% 100%;
+  
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  
+  --accent: 45 60% 15%;
+  --accent-foreground: 45 60% 70%;
+  
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  
+  --radius: 1.5rem;
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.glass-gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5E0A3 50%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-shadow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+/* Mobile-First Adjustments */
+@media (max-width: 640px) {
+  :root {
+    --radius: 1rem;
+  }
+  .glass-card {
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Custom Scrollbar for Luxury feel */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.4);
+}

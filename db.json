@@ -1,0 +1,155 @@
+{
+  "system_config": [
+    {
+      "id": "config_001",
+      "context": "system_config",
+      "data": {
+        "site_title": "La Empresa de Diseño",
+        "identity_color": "#D4C5A1",
+        "home_slug": "projects",
+        "theme_mode": "warm",
+        "manifesto": "Diseño Industrial Sistémico para la Excelencia en Carpintería."
+      },
+      "created_at": "2026-05-02T00:00:00.000Z",
+      "updated_at": "2026-05-02T00:00:00.000Z"
+    },
+    {
+      "id": "main",
+      "data": {
+        "app_name": "Empresa de diseño",
+        "default_route": "",
+        "locale": "es"
+      },
+      "context": "system_config",
+      "created_at": "2026-05-03T16:38:28.890Z",
+      "updated_at": "2026-05-03T16:38:28.890Z"
+    }
+  ],
+  "schema_definitions": [
+    {
+      "id": "class_material",
+      "context": "schema_definitions",
+      "data": {
+        "name": "Material",
+        "icon": "Box",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nombre del Material",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "type",
+            "label": "Tipo",
+            "type": "select",
+            "options": [
+              "Madera",
+              "Metal",
+              "Herraje",
+              "Otro"
+            ]
+          },
+          {
+            "key": "height",
+            "label": "Alto (mm)",
+            "type": "number"
+          },
+          {
+            "key": "length",
+            "label": "Largo (mm)",
+            "type": "number"
+          },
+          {
+            "key": "width",
+            "label": "Ancho (mm)",
+            "type": "number"
+          },
+          {
+            "key": "finish_color",
+            "label": "Color/Acabado",
+            "type": "text"
+          },
+          {
+            "key": "finish_type",
+            "label": "Tipo de Acabado",
+            "type": "select",
+            "options": [
+              "Mate",
+              "Brillante",
+              "Satinado"
+            ]
+          },
+          {
+            "key": "cost_price",
+            "label": "Precio de Compra (Directo)",
+            "type": "number"
+          },
+          {
+            "key": "sale_price",
+            "label": "Precio de Venta",
+            "type": "number"
+          },
+          {
+            "key": "provider",
+            "label": "Proveedor Principal",
+            "type": "text"
+          }
+        ]
+      },
+      "created_at": "2026-05-02T00:00:00.000Z",
+      "updated_at": "2026-05-02T00:00:00.000Z"
+    },
+    {
+      "id": "class_service",
+      "context": "schema_definitions",
+      "data": {
+        "name": "Servicio",
+        "icon": "Tool",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nombre del Servicio",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "type",
+            "label": "Tipo",
+            "type": "select",
+            "options": [
+              "Diseño",
+              "Instalación",
+              "Transporte",
+              "Fabricación"
+            ]
+          },
+          {
+            "key": "unit",
+            "label": "Unidad de Medida",
+            "type": "select",
+            "options": [
+              "Global",
+              "Hora",
+              "m2",
+              "Metro Lineal"
+            ]
+          },
+          {
+            "key": "cost_price",
+            "label": "Costo Directo",
+            "type": "number"
+          },
+          {
+            "key": "sale_price",
+            "label": "Precio al Cliente",
+            "type": "number"
+          }
+        ]
+      },
+      "created_at": "2026-05-02T00:00:00.000Z",
+      "updated_at": "2026-05-02T00:00:00.000Z"
+    }
+  ],
+  "page_routes": []
+}
